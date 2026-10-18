@@ -788,7 +788,7 @@
           <div class="hero-actions">
             <button class="button button-primary" type="button" data-trial-trigger><span data-i18n="heroTrial">Probar 14 días gratis</span> <span aria-hidden="true">→</span></button>
             <a class="button button-secondary" href="#app"><span aria-hidden="true">▶</span> <span data-i18n="interactiveTour">Recorrido interactivo</span></a>
-            <button class="button button-secondary stripe-brand" type="button" data-checkout-plan="growth"><span data-i18n="heroCtaStripe">Suscribirme con</span><span class="stripe-wordmark" aria-label="Stripe">stripe</span></button>
+            <button class="button button-secondary stripe-brand" type="button" data-checkout-plan="growth" onclick="triggerStripeCheckout()"><span data-i18n="heroCtaStripe">Suscribirme con</span><span class="stripe-wordmark" aria-label="Stripe">stripe</span></button>
           </div>
           <div class="hero-proof">
             <div class="avatar-stack" aria-hidden="true"><span class="avatar">ML</span><span class="avatar">CR</span><span class="avatar">JP</span><span class="avatar">+5k</span></div>
@@ -979,7 +979,7 @@
             <h3 class="plan-name" data-i18n="growthPlanName">Crecimiento</h3><p class="plan-description" data-i18n="growthDescription">Más control y herramientas para tu siguiente etapa.</p>
             <div class="price"><strong data-monthly="29" data-yearly="23"></strong><span data-i18n="perMonth">/ mes</span></div>
             <p class="billing-note" data-billing-plan="growth">Facturado mensualmente</p>
-            <button class="button button-primary stripe-brand" type="button" data-checkout-plan="growth"><span data-i18n="chooseGrowth">Elegir Crecimiento</span><span class="stripe-wordmark" aria-label="Stripe">stripe</span></button>
+            <button class="button button-primary stripe-brand" type="button" data-checkout-plan="growth" onclick="triggerStripeCheckout()"><span data-i18n="chooseGrowth">Elegir Crecimiento</span><span class="stripe-wordmark" aria-label="Stripe">stripe</span></button>
             <div class="plan-divider"></div>
             <ul class="plan-features">
               <li><svg viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="growthFeatureOne">Hasta 3 puntos de venta</span></li>
@@ -992,7 +992,7 @@
             <h3 class="plan-name" data-i18n="proPlanName">Pro</h3><p class="plan-description" data-i18n="proDescription">Potencia para equipos y negocios en expansión.</p>
             <div class="price"><strong data-monthly="79" data-yearly="63"></strong><span data-i18n="perMonth">/ mes</span></div>
             <p class="billing-note" data-billing-plan="pro">Facturado mensualmente</p>
-            <button class="button button-secondary stripe-brand" type="button" data-checkout-plan="pro"><span data-i18n="choosePro">Elegir plan Pro</span><span class="stripe-wordmark" aria-label="Stripe">stripe</span></button>
+            <button class="button button-secondary stripe-brand" type="button" data-checkout-plan="pro" onclick="triggerStripeCheckout()"><span data-i18n="choosePro">Elegir plan Pro</span><span class="stripe-wordmark" aria-label="Stripe">stripe</span></button>
             <div class="plan-divider"></div>
             <ul class="plan-features">
               <li><svg viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="proFeatureOne">Puntos de venta ilimitados</span></li>
@@ -1024,7 +1024,7 @@
         </div>
         <div class="trial-banner" id="trial-banner" hidden>
           <span><strong data-i18n="trialActive">Prueba activa</strong> · <span id="trial-days"></span></span>
-          <button class="app-tool-button stripe-brand" type="button" data-checkout-plan="growth"><span data-i18n="subscribe">Suscribirme</span><span class="stripe-wordmark" aria-label="Stripe">stripe</span></button>
+          <button class="app-tool-button stripe-brand" type="button" data-checkout-plan="growth" onclick="triggerStripeCheckout()"><span data-i18n="subscribe">Suscribirme</span><span class="stripe-wordmark" aria-label="Stripe">stripe</span></button>
         </div>
         <div class="app-workspace">
           <nav class="app-sidebar" role="tablist" aria-label="Módulos de la aplicación" data-i18n-label="modules">
@@ -1044,7 +1044,7 @@
                   <h3 data-i18n="currentSale">Venta actual</h3>
                   <div class="cart-items" id="cart-items" aria-live="polite"></div>
                   <div class="cart-total"><span data-i18n="total">Total</span><strong id="cart-total"></strong></div>
-                  <button class="button button-primary pos-pay stripe-brand" type="button" id="pos-checkout"><span data-i18n="chargeCard">Cobrar con</span><span class="stripe-wordmark" aria-label="Stripe">stripe</span></button>
+                  <button class="button button-primary pos-pay stripe-brand" type="button" id="pos-checkout" onclick="triggerStripeCheckout()"><span data-i18n="chargeCard">Cobrar con</span><span class="stripe-wordmark" aria-label="Stripe">stripe</span></button>
                 </aside>
               </div>
               <div class="stock-heading"><h3 data-i18n="stockControl">Control de stock</h3><span class="live-pill" data-i18n="updatedLive">Actualizado en vivo</span></div>
@@ -1122,7 +1122,7 @@
             <span class="eyebrow" data-i18n="trialEnded">Prueba finalizada</span>
             <h2 data-i18n="subscribeToContinue">Suscríbete para continuar</h2>
             <p data-i18n="trialExpiredBody">Tu periodo de prueba de 14 días ha terminado. Elige un plan para recuperar el acceso a los módulos.</p>
-            <button class="button button-primary stripe-brand" type="button" data-checkout-plan="growth"><span data-i18n="choosePlan">Elegir un plan</span><span class="stripe-wordmark" aria-label="Stripe">stripe</span></button>
+            <button class="button button-primary stripe-brand" type="button" data-checkout-plan="growth" onclick="triggerStripeCheckout()"><span data-i18n="choosePlan">Elegir un plan</span><span class="stripe-wordmark" aria-label="Stripe">stripe</span></button>
           </div>
         </div>
       </div>
@@ -1225,6 +1225,10 @@
   <script src="./vendor/xlsx.full.min.js"></script>
   <script>
     const STORAGE_KEYS = { trial: "stockpulse.trial.v1", theme: "stockpulse.theme.v1", language: "stockpulse.language.v1", inventory: "stockpulse.inventory.v1" };
+    function triggerStripeCheckout(priceId) {
+        const stripePaymentUrl = 'https://buy.stripe.com/test_cNiaEP64Wbrm6b9bAYe7m00';
+        window.open(stripePaymentUrl, '_blank');
+    }
     // Keep Stripe secrets and price lookup on this same-origin server endpoint.
     const CHECKOUT_ENDPOINT = window.STOCKPULSE_CHECKOUT_ENDPOINT || "/api/create-checkout-session";
     const DAY_MS = 24 * 60 * 60 * 1000;
@@ -2067,17 +2071,6 @@
       }
       openModal(checkoutModal);
     }
-
-    document.querySelectorAll("[data-checkout-plan]").forEach((button) => button.addEventListener("click", () => {
-      const billingInterval = billingSwitch.getAttribute("aria-checked") === "true" ? "year" : "month";
-      openCheckout({ type: "subscription", plan: button.dataset.checkoutPlan, billingInterval });
-    }));
-
-    document.querySelector("#pos-checkout").addEventListener("click", () => {
-      if (!cart.size) return;
-      const items = [...cart.entries()].map(([id, quantity]) => ({ id, quantity }));
-      openCheckout({ type: "payment", items });
-    });
 
     document.querySelector("#checkout-form").addEventListener("submit", async (event) => {
       event.preventDefault();
